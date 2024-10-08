@@ -27,8 +27,6 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
   List<String> messages = [];
-
-  // Directly include your OpenAI API key here
   String apiKey = 'Enter the API key here';
   Future<void> getMovieRecommendations(String keywords) async {
     final url = Uri.parse('https://api.openai.com/v1/chat/completions');
